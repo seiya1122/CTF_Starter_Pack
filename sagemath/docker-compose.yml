@@ -1,0 +1,13 @@
+version: '3'
+services:
+  sage-notebook:
+    image: sagemath/sagemath:latest
+    container_name: ctf_sagemath
+    ports:
+      # ホスト側ポートを9999に変更（8888の競合回避）
+      - "9999:8888"
+    command: sage-jupyter
+    volumes:
+      # メイン環境と同じworkspaceを共有
+      # 相対パスで一つ上のworkspaceを参照します
+      - ../workspace:/home/sage/workspace

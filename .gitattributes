@@ -1,0 +1,11 @@
+# シェルスクリプトは必ずLF (Linux形式) で保存・展開する
+
+*.sh text eol=lf
+
+# PythonファイルもLF推奨
+
+*.py text eol=lf
+
+# その他は自動判別
+
+- text=auto
