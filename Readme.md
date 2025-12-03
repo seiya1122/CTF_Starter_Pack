@@ -37,7 +37,9 @@ Web, Pwn, Crypto, Miscなど主要ジャンルのツールがすぐに使用可�
 
 3. 左下の >< ボタンをクリックし、"Reopen in Container" を選択します。
 
-4. 初回ビルドが完了し、ターミナルが root@... になれば準備完了です。
+4. Start Containerの文字が出ると進まなくなるのでF1キーを押した後Reload Windowをします。
+
+5. 初回ビルドが完了し、ターミナルが root@... になれば準備完了です。
 
 ## 🧮 SageMath (Crypto) の起動手順
 
@@ -64,6 +66,8 @@ cd Desktop\CTF_Starter_Pack\sagemath
 ```
 docker compose up
 ```
+
+Dockerに関しての許可が求められた場合、そのまま許可してください。
 
 ### Step 4: ブラウザでアクセス（重要！）
 
